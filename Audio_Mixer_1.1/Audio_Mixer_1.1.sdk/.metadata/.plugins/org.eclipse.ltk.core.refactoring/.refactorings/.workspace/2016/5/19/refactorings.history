@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="true" description="Delete 3 resources" element1="/Audio_Mixer_Design_wrapper_hw_platform_0" element2="/Audio_Mixer_Design_wrapper_hw_platform_1" element3="/Audio_Mixer_Design_wrapper_hw_platform_2" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1463240869359"/>
+</session>

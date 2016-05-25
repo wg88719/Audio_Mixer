@@ -1,0 +1,322 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date              : Sat May 14 18:57:16 2016
+| Host              : harsha-HP-EliteBook-8440p running 64-bit Ubuntu 14.04.3 LTS
+| Command           : report_clock_utilization -file Audio_Mixer_Design_wrapper_clock_utilization_routed.rpt
+| Design            : Audio_Mixer_Design_wrapper
+| Device            : 7z020-clg484
+| Speed File        : -1  PRODUCTION 1.11 2014-09-11
+| Temperature Grade : C
+-------------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+10. Net wise resources used in clock region X0Y1
+11. Net wise resources used in clock region X1Y1
+12. Net wise resources used in clock region X0Y2
+13. Net wise resources used in clock region X1Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |   14 |        32 |         0 |
+| BUFH  |    0 |        72 |         0 |
+| BUFIO |    0 |        16 |         0 |
+| MMCM  |    1 |         4 |         0 |
+| PLL   |    0 |         4 |         0 |
+| BUFR  |    0 |        16 |         0 |
+| BUFMR |    0 |         8 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+---------------+-------+
+|       |                                                                                  |                                                                                                         |   Num Loads   |       |
++-------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-------+-------+-------+
+| Index | BUFG Cell                                                                        | Net Name                                                                                                |  BELs | Sites | Fixed |
++-------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-------+-------+-------+
+|     1 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__2                          | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready |    32 |     8 |    no |
+|     2 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__1                          | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready |    32 |     8 |    no |
+|     3 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__4                          | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready |    32 |     8 |    no |
+|     4 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__3                          | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready |    32 |     8 |    no |
+|     5 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__0                          | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |    32 |     8 |    no |
+|     6 | Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3                             | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready |    32 |     8 |    no |
+|     7 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__2                          | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready |    32 |     8 |    no |
+|     8 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__1                          | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready |    32 |     8 |    no |
+|     9 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__4                          | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready |    32 |     8 |    no |
+|    10 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__3                          | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready |    32 |     8 |    no |
+|    11 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__0                          | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |    32 |     8 |    no |
+|    12 | Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3                             | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready |    32 |     8 |    no |
+|    13 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clkout1_buf                       | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48                                                   |   237 |    86 |    no |
+|    14 | Audio_Mixer_Design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0                                                | 12981 |  3612 |    no |
++-------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-------+-------+-------+
+
+
++-------+--------------------------------------------------------------+------------------------------------------------------------------+--------------+-------+
+|       |                                                              |                                                                  |   Num Loads  |       |
++-------+--------------------------------------------------------------+------------------------------------------------------------------+------+-------+-------+
+| Index | MMCM Cell                                                    | Net Name                                                         | BELs | Sites | Fixed |
++-------+--------------------------------------------------------------+------------------------------------------------------------------+------+-------+-------+
+|     1 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/mmcm_adv_inst | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_feedback      |    1 |     1 |    no |
+|     2 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/mmcm_adv_inst | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/zed_audio_clk_48M |    1 |     1 |    no |
++-------+--------------------------------------------------------------+------------------------------------------------------------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1028 | 20000 |    4 |  4000 |    1 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2976 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 3129 |  9600 |   54 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |   11 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5636 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  274 |  9600 |   18 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  480 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y0
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                              Clock Net Name                                             |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y9  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready |
+| BUFG        | BUFHCE_X0Y8  |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 169 |     4 |        0 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48                                                   |
+| BUFG        | BUFHCE_X0Y10 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 827 |     0 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0                                                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+
+
+9. Net wise resources used in clock region X1Y0
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                              Clock Net Name                                             |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y10 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    4 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y1  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y11 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   12 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y8  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   25 |     0 |        0 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48                                                   |
+| BUFG        | BUFHCE_X1Y9  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y0  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y2  |   no  |         1 |        0 |       0 |         0 |       0 |       0 | 2863 |     0 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0                                                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+
+
+10. Net wise resources used in clock region X0Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                      Clock Net Name                      |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    2 |     2 |        0 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48    |
+| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3127 |    52 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+----------------------------------------------------------+
+
+
+11. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                                              Clock Net Name                                             |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y16 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    4 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y14 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   20 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y17 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   24 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y12 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   28 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y13 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y15 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready |
+| BUFG        | BUFHCE_X1Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y23 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   32 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   34 |     0 |        0 | Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48                                                   |
+| BUFG        | BUFHCE_X1Y18 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 5366 |     0 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0                                                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+---------------------------------------------------------------------------------------------------------+
+
+
+12. Net wise resources used in clock region X0Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                      Clock Net Name                      |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------+
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 274 |    18 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0 |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------+
+
+
+13. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                                              Clock Net Name                                             |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  28 |     0 |        0 | Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready |
+| BUFG        | BUFHCE_X1Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 452 |     0 |        0 | Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0                                                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+---------------------------------------------------------------------------------------------------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y4 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__2]
+set_property LOC BUFGCTRL_X0Y3 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__1]
+set_property LOC BUFGCTRL_X0Y6 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__4]
+set_property LOC BUFGCTRL_X0Y5 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__3]
+set_property LOC BUFGCTRL_X0Y2 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__0]
+set_property LOC BUFGCTRL_X0Y1 [get_cells Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3]
+set_property LOC BUFGCTRL_X0Y10 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__2]
+set_property LOC BUFGCTRL_X0Y9 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__1]
+set_property LOC BUFGCTRL_X0Y12 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__4]
+set_property LOC BUFGCTRL_X0Y11 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__3]
+set_property LOC BUFGCTRL_X0Y8 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__0]
+set_property LOC BUFGCTRL_X0Y7 [get_cells Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3]
+set_property LOC BUFGCTRL_X0Y16 [get_cells Audio_Mixer_Design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG]
+set_property LOC BUFGCTRL_X0Y0 [get_cells Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clkout1_buf]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+set_property LOC MMCME2_ADV_X1Y0 [get_cells Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/mmcm_adv_inst]
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__2" located at site "BUFGCTRL_X0Y4"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__1" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__4" located at site "BUFGCTRL_X0Y6"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__3" located at site "BUFGCTRL_X0Y5"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3__0" located at site "BUFGCTRL_X0Y2"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_0/counter_reg[0]_i_3" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_0/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__2" located at site "BUFGCTRL_X0Y10"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_L/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__1" located at site "BUFGCTRL_X0Y9"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_BP_R/Mul_Ready}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__4" located at site "BUFGCTRL_X0Y12"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_L/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__3" located at site "BUFGCTRL_X0Y11"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_HP_R/Mul_Ready}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3__0" located at site "BUFGCTRL_X0Y8"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_L/Mul_Ready}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready" driven by instance "Audio_Mixer_Design_i/FILTER_IIR_1/counter_reg[0]_i_3" located at site "BUFGCTRL_X0Y7"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/FILTER_IIR_1/FILTER_IIR_v1_0_S00_AXI_inst/Filter_Top_Level_inst/IIR_LP_R/Mul_Ready}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0" driven by instance "Audio_Mixer_Design_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48" driven by instance "Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clkout1_buf" located at site "BUFGCTRL_X0Y0"
+#startgroup
+create_pblock {CLKAG_Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48}
+add_cells_to_pblock [get_pblocks  {CLKAG_Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48"}]]]
+resize_pblock [get_pblocks {CLKAG_Audio_Mixer_Design_i/zed_audio_0/U0/i_clocking/clk_48}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup

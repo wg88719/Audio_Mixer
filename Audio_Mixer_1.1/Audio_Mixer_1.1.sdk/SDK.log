@@ -1,0 +1,66 @@
+17:25:59 INFO  : Processing command line option -hwspec /home/INTRA/harman/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper.hdf.
+17:26:02 ERROR : Error occurred while creating hardware platform Audio_Mixer_Design_wrapper_hw_platform_0 from sysdef
+java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /home/INTRA/harman/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper_hw_platform_0/system.hdf
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:91)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:53)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:117)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:415)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:397)
+	at com.xilinx.sdk.startup.InitSDK$9.run(InitSDK.java:348)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:26:04 INFO  : Launching XSDB server: xsdb -n -s /cad/x_15/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2485
+17:26:05 INFO  : XSDB server has started successfully.
+17:34:45 INFO  : Processing command line option -hwspec /home/INTRA/harman/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper.hdf.
+17:34:46 ERROR : Error occurred while creating hardware platform Audio_Mixer_Design_wrapper_hw_platform_1 from sysdef
+java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /home/INTRA/harman/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper_hw_platform_1/system.hdf
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:91)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:53)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:117)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:415)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:397)
+	at com.xilinx.sdk.startup.InitSDK$9.run(InitSDK.java:348)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+17:34:46 INFO  : Launching XSDB server: xsdb -n -s /cad/x_15/SDK/2015.1/scripts/xsdb/xsdb/xsdb-server.tcl 2485
+17:34:47 INFO  : XSDB server has started successfully.
+18:46:53 INFO  : Launching XSDB server: xsdb -n /media/harsha/HydraDrive/EDA/Vivado/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:46:57 INFO  : XSDB server has started successfully.
+18:47:03 INFO  : Processing command line option -hwspec /home/harsha/work/Zynq/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper.hdf.
+18:47:05 ERROR : (XSDB Server)ERROR: [Hsi 55-2019] Audio_Mixer_Design.hwh file is empty
+ERROR: [Hsi 55-1537] Parsing of file Audio_Mixer_Design.hwh failed
+
+18:47:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+18:47:05 ERROR : Failed to openhw "/home/harsha/work/Zynq/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper_hw_platform_2/system.hdf"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+18:47:05 ERROR : Error occurred while creating hardware platform Audio_Mixer_Design_wrapper_hw_platform_2 from sysdef
+java.lang.IllegalArgumentException: Invalid Hardware Specification File provided: /home/harsha/work/Zynq/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper_hw_platform_2/system.hdf
+	at com.xilinx.sdk.hw.internal.HwPlatform.<init>(HwPlatform.java:282)
+	at com.xilinx.sdk.hw.internal.HwSpecFactory.createHwSpec(HwSpecFactory.java:53)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:117)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:214)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:165)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:152)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:127)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:417)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:399)
+	at com.xilinx.sdk.startup.InitSDK$11.run(InitSDK.java:350)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:07:25 INFO  : Launching XSDB server: xsdb -n /media/harsha/HydraDrive/EDA/Vivado/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:07:29 INFO  : XSDB server has started successfully.
+19:07:33 INFO  : Processing command line option -hwspec /home/harsha/work/Zynq/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper.hdf.
+03:32:40 INFO  : Launching XSDB server: xsdb -n /media/harsha/HydraDrive/EDA/Vivado/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+03:32:44 INFO  : XSDB server has started successfully.
+03:33:00 INFO  : Processing command line option -hwspec /home/harsha/work/Zynq/workspace/Audio_Mixer_1.1/Audio_Mixer_1.1.sdk/Audio_Mixer_Design_wrapper.hdf.
+03:33:04 INFO  : Checking for hwspec changes in the project Audio_Mixer_Design_wrapper_hw_platform_0.
+03:40:48 INFO  : Invoking Bootgen: bootgen -image output.bif -o /home/harsha/work/Zynq/workspace/sd-image/BOOT.bin
+03:40:48 INFO  : Creating new bif file /home/harsha/work/Zynq/workspace/sd-temp/output.bif
+03:40:49 INFO  : Bootgen command execution is done.

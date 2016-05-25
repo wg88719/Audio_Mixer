@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/harsha/work/Zynq/workspace/sd-temp/FSBL.elf
+	/home/harsha/work/Zynq/workspace/sd-temp/Audio_Mixer_Design_wrapper.bit
+	/home/harsha/work/Zynq/workspace/sd-temp/u-boot.elf
+}
